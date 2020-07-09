@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div  class="col-lg-5">
+			</div>
+			<div id='heading' class="col-lg-6 col-md-6 col-sm-7 jumbotron text-center">
+	            <h1>Stop Watch</h1>
+		</div>
+
+</div>
+<div class="row">
+			<div  class="col-lg-5">
+			</div>
+			<div id="items" class="col-lg-6 col-md-6 col-sm-7">
+		<div id="times">
+            <h1 id="min" style="font-family: 'Orbitron', sans-serif;">0</h1>
+            <h1 id="sec" style="font-family: 'Orbitron', sans-serif;">0</h1>
+            <h1 id="msec" style="font-family: 'Orbitron', sans-serif;">0</h1>
+        </div><br/>
+        <div class="buttons">
+            <button id='start' onclick="start()" class="btn btn-primary btn-lg text-center">Start</button>
+            <button id="pause" onclick="end()" class="btn btn-success btn-lg text-center">Pause</button>
+            <button id="reset" onclick="reset()" class="btn btn-danger btn-lg text-center">Reset</button>
+        </div>
+        <div class="history">
+            <h1 id="history-text"></h1>
+			</div>
+</div>
+	</div>
+	<script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
